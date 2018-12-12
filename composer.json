@@ -1,0 +1,28 @@
+{
+    "name": "inroutephp/example-app",
+    "description": "Inroute example application.",
+    "homepage": "https://github.com/inroutephp/example-app",
+    "type": "project",
+    "license": "Unlicense",
+    "authors": [
+        {
+            "name": "Hannes Forsgård",
+            "email": "hannes.forsgard@fripost.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "inroutephp\\example\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "inroutephp/inroute": "^1.0@beta",
+        "zendframework/zend-diactoros": "^2.0",
+        "zendframework/zend-httphandlerrunner": "^1.0",
+        "mindplay/middleman": "^3.0"
+    },
+    "require-dev": {
+        "inroutephp/console": "^1.0@beta"
+    }
+}
