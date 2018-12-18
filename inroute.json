@@ -1,10 +1,10 @@
 {
     "source-dir": "src/Controller",
-    "source-prefix": "inroutephp\\example\\Controller",
+    "source-prefix": "example_app\\Controller",
     "compiler-passes": [
-        "inroutephp\\example\\ScreamCompilerPass"
+        "example_app\\ScreamCompilerPass"
     ],
     "target-filename": "src/HttpRouter.php",
-    "target-namespace": "inroutephp\\example",
+    "target-namespace": "example_app",
     "target-classname": "HttpRouter"
 }

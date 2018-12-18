@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace inroutephp\example;
+namespace example_app;
 
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;

@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace inroutephp\example;
+namespace example_app;
 
-use inroutephp\example\Annotations\Scream;
+use Annotations\Scream;
 use inroutephp\inroute\Compiler\CompilerPassInterface;
 use inroutephp\inroute\Runtime\RouteInterface;
 

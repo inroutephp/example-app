@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "inroutephp\\example\\": "src/"
+            "example_app\\": "src/"
         }
     },
     "require": {

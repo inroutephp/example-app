@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace inroutephp\example\Annotations;
+namespace example_app\Annotations;
 
 /**
  * Doctrine annotation to be captured in ScreamCompilerPass

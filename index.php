@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace inroutephp\example;
+namespace example_app;
 
 require "vendor/autoload.php";
 

@@ -2,9 +2,9 @@
 
 declare(strict_types = 1);
 
-namespace inroutephp\example\Controller;
+namespace example_app\Controller;
 
-use inroutephp\inroute\Annotation\Route;
+use inroutephp\inroute\Annotations\Route;
 use inroutephp\inroute\Runtime\EnvironmentInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

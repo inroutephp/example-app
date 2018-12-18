@@ -2,10 +2,11 @@
 
 declare(strict_types = 1);
 
-namespace inroutephp\example\Controller;
+namespace example_app\Controller;
 
-use inroutephp\example\Annotations\Scream;
-use inroutephp\inroute\Annotation\Route;
+use example_app\Annotations\Scream;
+use inroutephp\inroute\Annotations\GET;
+use inroutephp\inroute\Annotations\Pipe;
 use inroutephp\inroute\Runtime\EnvironmentInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -13,14 +14,8 @@ use Psr\Http\Message\ServerRequestInterface;
 class Controller
 {
     /**
-     * @Route(
-     *     path="/foo/{name}",
-     *     method="GET",
-     *     name="foobar",
-     *     attributes={
-     *         "scream": true
-     *     }
-     * )
+     * @GET(path="/foo/{name}")
+     * @Pipe(middlewares={"ScreamMiddleware"})
      * @Scream
      */
     public function foo(ServerRequestInterface $request, EnvironmentInterface $env): ResponseInterface
