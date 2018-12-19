@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace example_app\Controller;
+namespace example_app\Cntrl;
 
 use inroutephp\inroute\Annotations\Route;
 use inroutephp\inroute\Runtime\EnvironmentInterface;
@@ -10,7 +10,7 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response\TextResponse;
 
-class IndexController
+class Index
 {
     /**
      * @Route(

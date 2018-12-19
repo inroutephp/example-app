@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace example_app\Controller;
+namespace example_app\Cntrl;
 
 use example_app\Annotations\Scream;
 use inroutephp\inroute\Annotations\GET;
@@ -14,7 +14,7 @@ use Psr\Http\Message\ServerRequestInterface;
 class Controller
 {
     /**
-     * @GET(path="/foo/{name}")
+     * @GET(path="/foo/{name}", name="foo")
      * @Pipe(middlewares={"ScreamMiddleware"})
      * @Scream
      */

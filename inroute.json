@@ -1,6 +1,6 @@
 {
-    "source-dir": "src/Controller",
-    "source-prefix": "example_app\\Controller",
+    "source-dir": "src/Cntrl",
+    "source-prefix": "example_app\\Cntrl",
     "compiler-passes": [
         "example_app\\ScreamCompilerPass"
     ],
