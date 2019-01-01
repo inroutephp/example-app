@@ -57,7 +57,7 @@ $mapper->mapRoute(\Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
     [
         'inroutephp\\inroute\\Runtime\\Route' => [
             'name' => [
-                'foo',
+                'form',
             ],
             'routable' => [
                 true,
@@ -68,17 +68,81 @@ $mapper->mapRoute(\Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
                 ],
             ],
             'path' => [
-                '/foo/{name}',
+                '/form',
             ],
             'serviceId' => [
-                'example_app\\Cntrl\\Controller',
+                'example_app\\Cntrl\\Form',
             ],
             'serviceMethod' => [
-                'foo',
+                'get',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+));
+$mapper->mapRoute(\Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['inroutephp\\inroute\\Runtime\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('inroutephp\\inroute\\Runtime\\Route')),
+    ],
+    null,
+    [
+        'inroutephp\\inroute\\Runtime\\Route' => [
+            'name' => [
+                'example_app\\Cntrl\\Form:post',
+            ],
+            'routable' => [
+                true,
+            ],
+            'httpMethods' => [
+                [
+                    'POST',
+                ],
+            ],
+            'path' => [
+                '/form',
+            ],
+            'serviceId' => [
+                'example_app\\Cntrl\\Form',
+            ],
+            'serviceMethod' => [
+                'post',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+));
+$mapper->mapRoute(\Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['inroutephp\\inroute\\Runtime\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('inroutephp\\inroute\\Runtime\\Route')),
+    ],
+    null,
+    [
+        'inroutephp\\inroute\\Runtime\\Route' => [
+            'name' => [
+                'login',
+            ],
+            'routable' => [
+                true,
+            ],
+            'httpMethods' => [
+                [
+                    'GET',
+                ],
+            ],
+            'path' => [
+                '/login',
+            ],
+            'serviceId' => [
+                'example_app\\Cntrl\\Login',
+            ],
+            'serviceMethod' => [
+                'login',
             ],
             'middlewareServiceIds' => [
                 [
-                    'ScreamMiddleware',
+                    'Middlewares\\BasicAuthentication',
                 ],
             ],
         ],

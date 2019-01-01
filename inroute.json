@@ -1,9 +1,6 @@
 {
     "source-dir": "src/Cntrl",
     "source-prefix": "example_app\\Cntrl",
-    "compiler-passes": [
-        "example_app\\ScreamCompilerPass"
-    ],
     "target-filename": "src/HttpRouter.php",
     "target-namespace": "example_app",
     "target-classname": "HttpRouter"

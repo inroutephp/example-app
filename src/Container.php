@@ -5,6 +5,8 @@ declare(strict_types = 1);
 namespace example_app;
 
 use Psr\Container\ContainerInterface;
+use Middlewares\BasicAuthentication;
+use Psr\Http\Message\ResponseFactoryInterface;
 
 /**
  * Dead simple container implementation. You may of course use any psr-11
@@ -21,7 +23,11 @@ class Container implements ContainerInterface
     public function __construct()
     {
         $this->services = [
-            Cntrl\Index::CLASS => new Cntrl\Index
+            Cntrl\Index::CLASS => new Cntrl\Index,
+            Cntrl\Login::CLASS => new Cntrl\Login,
+            Cntrl\Form::CLASS => new Cntrl\Form,
+            ResponseFactoryInterface::CLASS => new ResponseFactory,
+            BasicAuthentication::CLASS => (new BasicAuthentication(['foo' => 'bar']))->attribute('username'),
         ];
     }
 
