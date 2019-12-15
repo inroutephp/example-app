@@ -1,6 +1,6 @@
 {
-    "source-dir": "src/Cntrl",
-    "source-prefix": "example_app\\Cntrl",
+    "source-dir": "src/Http",
+    "source-prefix": "example_app\\Http",
     "target-filename": "src/HttpRouter.php",
     "target-namespace": "example_app",
     "target-classname": "HttpRouter"

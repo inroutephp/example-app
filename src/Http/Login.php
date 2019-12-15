@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace example_app\Cntrl;
+namespace example_app\Http;
 
 use example_app\Annotations\LoginRequired;
 use inroutephp\inroute\Annotations\GET;

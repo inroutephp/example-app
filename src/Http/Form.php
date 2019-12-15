@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace example_app\Cntrl;
+namespace example_app\Http;
 
 use inroutephp\inroute\Annotations\BasePath;
 use inroutephp\inroute\Annotations\GET;

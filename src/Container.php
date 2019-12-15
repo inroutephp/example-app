@@ -23,9 +23,9 @@ class Container implements ContainerInterface
     public function __construct()
     {
         $this->services = [
-            Cntrl\Index::CLASS => new Cntrl\Index,
-            Cntrl\Login::CLASS => new Cntrl\Login,
-            Cntrl\Form::CLASS => new Cntrl\Form,
+            Http\Index::CLASS => new Http\Index,
+            Http\Login::CLASS => new Http\Login,
+            Http\Form::CLASS => new Http\Form,
             ResponseFactoryInterface::CLASS => new ResponseFactory,
             BasicAuthentication::CLASS => (new BasicAuthentication(['foo' => 'bar']))->attribute('username'),
         ];
