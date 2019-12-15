@@ -7,8 +7,29 @@ Simple inroute example application.
 ## Getting started
 
 1. Clone this repository
-1. Install dependencies using `composer install`
-1. Examine the router using `vendor/bin/inroute debug`
-1. When needed rebuild the router using `vendor/bin/inroute build`
-1. Start a local server using `php -S localhost:8000 public/app.php`
-1. Point you browser to `http://localhost:8000`
+
+2. Install dependencies
+
+```shell
+composer install
+```
+
+3. Examine the router
+
+```shell
+vendor/bin/inroute debug
+```
+
+4. Rebuild the router
+
+```shell
+vendor/bin/inroute build
+```
+
+5. Start a local server
+
+```shell
+php -S localhost:8000 public/app.php
+```
+
+6. Open in browser: http://localhost:8000
