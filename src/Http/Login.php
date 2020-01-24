@@ -10,7 +10,7 @@ use inroutephp\inroute\Annotations\Pipe;
 use inroutephp\inroute\Runtime\EnvironmentInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Zend\Diactoros\Response\TextResponse;
+use Laminas\Diactoros\Response\TextResponse;
 
 class Login
 {

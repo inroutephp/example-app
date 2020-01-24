@@ -18,8 +18,8 @@
     "require": {
         "php": ">=7.2",
         "inroutephp/inroute": "^1",
-        "zendframework/zend-diactoros": "^2",
-        "zendframework/zend-httphandlerrunner": "^1",
+        "laminas/laminas-diactoros": "^2",
+        "laminas/laminas-httphandlerrunner": "^1",
         "middlewares/http-authentication": "^1.1"
     },
     "require-dev": {
